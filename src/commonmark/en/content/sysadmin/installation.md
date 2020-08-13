@@ -1374,6 +1374,13 @@ http {
 }
 ```
 
+### Blocking specific Android App versions with nginx
+
+<!--DHIS2-SECTION-ID:install_making_resources_available_with_nginx-->
+
+In some scenarios the system administrator might want to block certain Android clients based on its DHIS2 App version. For example, if the users on the field have not updated their Android App version to a specific one and the system administrator wants to block their access to force an update. This can be easily implemented by using specific *User-Agent* rules in the `nginx` configuration file.
+
+
 ## DHIS2 configuration reference
 
 <!--DHIS2-SECTION-ID:install_dhis2_configuration_reference-->
