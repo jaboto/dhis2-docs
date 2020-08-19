@@ -1415,9 +1415,14 @@ http {
 > * From version 1.1.0 to 1.3.2 the *User-Agent* followed the pattern Dhis2/AppVersion/AppVersion/Android_XX
 > * From version 2.0.0 and above the *User-Agent* follows the pattern com.dhis2/SdkVersion/AppVersion/Android_XX
 >
-> Android_XX refers to the Android API level i.e. the Android version as listed [here](https://developer.android.com/studio/releases/platforms).
+> *Android_XX* refers to the Android API level i.e. the Android version as listed [here](https://developer.android.com/studio/releases/platforms).
 >
 > nginx uses [PCRE](http://www.pcre.org/) for Regular Expression matching 
+
+> Warning
+>
+> A misconfiguration of this parameteres might block the access to all your devices. Make sure the *User-Agent* is correct and, depending on your implementation, update it accordingly with each new release.
+
 
 ## DHIS2 configuration reference
 
